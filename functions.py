@@ -30,7 +30,7 @@ def main():
             fp.write_bytes(uploaded_file.getvalue())
             show_pdf(tmp_file.name)
             texttoaudio(tmp_file.name)
-            download_audio(tmp_file.name)
+            #download_audio(tmp_file.name)
             #imgs = convert_from_path(tmp_file.name)
             #st.markdown(f"Converted images from PDF")
             #st.image(imgs)
@@ -62,6 +62,8 @@ def texttoaudio(file_path:str):
                 text = page.extractText()
                 engine.say(text)
                 engine.runAndWait()
+        if st.button("Download"):
+            st.write("😞 Sorry to disappoint! Working on it!")
                 
 def download_audio(file_path:str):
     with open(file_path,'rb') as f:
