@@ -23,10 +23,10 @@ def texttoaudio(file_path:str):
         engine = pyttsx3.init()
         st.subheader("Voice")
         voices = engine.getProperty('voices')
-        gender=st.radio('Voice', ['Male','Female'],index=1)
+        gender=st.radio('Voice', ['Male','Female'])
         if gender=="Male":
             engine.setProperty('voice', voices[0].id)
-        else:
+        elif gender=="Female":
             engine.setProperty('voice', voices[1].id)
         st.subheader('Speed')
         speed=st.slider("",min_value=0.25,max_value=2.0, step=0.25, value=1.0)
