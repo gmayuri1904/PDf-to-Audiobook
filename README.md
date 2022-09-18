@@ -1,5 +1,5 @@
 # PDf-to-Audiobook
-giphy.gif
+
 Converting a text file to audio reads text aloud to the user. It helps to support struggling students with writing-based knowledge. It helps to proofread, read accurately, understand and write notes. Let’s start developing this very popular python project to convert pdf file to audio speech.
 
 ## What is auto Audiobook?
